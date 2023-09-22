@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454118862088",
+    "project_id": "sweety-24b1a",
+    "storage_bucket": "sweety-24b1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454118862088:android:200d81d634bec302a990bd",
+        "android_client_info": {
+          "package_name": "com.tugcearas.sweety"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4y00PSVY1HP41B6oigg-y5e4aJiJcPac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

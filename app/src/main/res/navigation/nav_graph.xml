@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.tugcearas.sweety.ui.splash.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_signinScreen"
+            app:destination="@id/signinScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinScreen"
+        android:name="com.tugcearas.sweety.ui.auth.SigninScreen"
+        android:label="fragment_signin_screen"
+        tools:layout="@layout/fragment_signin_screen" >
+        <action
+            android:id="@+id/action_signinScreen_to_signupScreen"
+            app:destination="@id/signupScreen"
+            app:popUpTo="@id/signinScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signinScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/signinScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupScreen"
+        android:name="com.tugcearas.sweety.ui.auth.SignupScreen"
+        android:label="fragment_signup_screen"
+        tools:layout="@layout/fragment_signup_screen" >
+        <action
+            android:id="@+id/action_signupScreen_to_signinScreen"
+            app:destination="@id/signinScreen"
+            app:popUpTo="@id/signupScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signupScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/signupScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.tugcearas.sweety.ui.home.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_detailScreen"
+            app:destination="@id/detailScreen"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homeScreen_to_searchScreen"
+            app:destination="@id/searchScreen"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeScreen_to_signinScreen"
+            app:destination="@id/signinScreen"
+            app:popUpTo="@id/homeScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchScreen"
+        android:name="com.tugcearas.sweety.ui.search.SearchScreen"
+        android:label="fragment_search_screen"
+        tools:layout="@layout/fragment_search_screen" >
+        <action
+            android:id="@+id/action_searchScreen_to_detailScreen"
+            app:destination="@id/detailScreen"
+            app:popUpTo="@id/searchScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_searchScreen_to_favoriteScreen"
+            app:destination="@id/favoriteScreen"
+            app:popUpTo="@id/searchScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteScreen"
+        android:name="com.tugcearas.sweety.ui.favorite.FavoriteScreen"
+        android:label="fragment_favorite_screen"
+        tools:layout="@layout/fragment_favorite_screen" >
+        <action
+            android:id="@+id/action_favoriteScreen_to_cartScreen"
+            app:destination="@id/cartScreen"
+            app:popUpTo="@id/favoriteScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_favoriteScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartScreen"
+        android:name="com.tugcearas.sweety.ui.cart.CartScreen"
+        android:label="fragment_cart_screen"
+        tools:layout="@layout/fragment_cart_screen" >
+        <action
+            android:id="@+id/action_cartScreen_to_paymentScreen"
+            app:destination="@id/paymentScreen"
+            app:popUpTo="@id/cartScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_cartScreen_to_detailScreen"
+            app:destination="@id/detailScreen"
+            app:popUpTo="@id/cartScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentScreen"
+        android:name="com.tugcearas.sweety.ui.payment.PaymentScreen"
+        android:label="fragment_payment_screen"
+        tools:layout="@layout/fragment_payment_screen" >
+        <action
+            android:id="@+id/action_paymentScreen_to_successOrderScreen"
+            app:destination="@id/successOrderScreen"
+            app:popUpTo="@id/paymentScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/successOrderScreen"
+        android:name="com.tugcearas.sweety.ui.success.SuccessOrderScreen"
+        android:label="fragment_success_order_screen"
+        tools:layout="@layout/fragment_success_order_screen" >
+        <action
+            android:id="@+id/action_successOrderScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/successOrderScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.tugcearas.sweety.ui.detail.DetailScreen"
+        android:label="fragment_detail_screen"
+        tools:layout="@layout/fragment_detail_screen" >
+        <action
+            android:id="@+id/action_detailScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/detailScreen"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

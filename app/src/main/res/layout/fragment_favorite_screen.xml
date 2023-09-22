@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.favorite.FavoriteScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/fav_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/fav_toolbar"
+        app:layout_constraintStart_toStartOf="@id/fav_toolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fav"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fav_toolbar"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <ImageView
+        android:id="@+id/empty_fav"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintTop_toTopOf="@id/rv_fav"
+        app:layout_constraintStart_toStartOf="@id/rv_fav"
+        app:layout_constraintEnd_toEndOf="@id/rv_fav"
+        android:src="@drawable/empty_fav"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        />
+
+    <TextView
+        android:id="@+id/empty_fav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are no desseerts in favorites"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/dark_grey"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/rv_fav"
+        app:layout_constraintEnd_toEndOf="@id/rv_fav"
+        app:layout_constraintTop_toBottomOf="@id/empty_fav"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sweety</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_number_length">You entered incomplete!</string>
+    <string name="error_card_name">Please enter your card name!</string>
+    <string name="error_card_number">Please enter your card number!</string>
+    <string name="error_month">Please select a month!</string>
+    <string name="error_year">Please select a year!</string>
+    <string name="error_cvv">Please enter your card CVV!</string>
+    <string name="error_address">Please enter your address!</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.success.SuccessOrderScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/signin_lottie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_feedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/success_order" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your order has been received!"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_back_to_home"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_56sdp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_to_home"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:text="Back To Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
