@@ -2,7 +2,6 @@
 
 ![Sweety](https://github.com/TugceAras/Sweety/assets/79931228/88a2c30e-a598-45b1-8ea5-c2149676f5c0)
 
-
 <!-- Screenshots -->
 ## 📸 Screenshots
 <p align="center">
