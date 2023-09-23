@@ -34,7 +34,7 @@
 - Firebase (Auth)
 - Navigation
 - Dependency Injection | Hilt
-- Coroutine
+- Coroutines
 - Retrofit
 - Room Db
 - View Binding 
