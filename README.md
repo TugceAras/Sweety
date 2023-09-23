@@ -25,7 +25,7 @@
 - https://drive.google.com/file/d/1LzEyyBFaktMYflawpot98a8OiQZK_yxt/view?usp=sharing
 
 ## ✨ Presentation
-- [Sweety.pptx](https://github.com/TugceAras/Sweety/files/12705142/Sweety.pptx)
+- [Sweety_Tuğçe_Aras.pptx](https://github.com/TugceAras/Sweety/files/12706639/Sweety_Tugce_Aras.pptx)
 
 <!-- Technologies -->
 ## :point_down: Structures Used
